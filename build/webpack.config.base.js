@@ -10,7 +10,7 @@ const webpackBaseConfig = function (DEPLOY_ENV = 'prod') {
     const webpackConfig = {
         // 定义入口文件
         entry: {
-            app: resolve('src/App.jsx')
+            app: resolve('src/index.jsx')
         },
         resolve: config.resolve,
         devtool: config.devtool,

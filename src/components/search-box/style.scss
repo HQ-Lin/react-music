@@ -1,0 +1,27 @@
+@import "@assets/scss/variable";
+.search-box {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 6px;
+    height: 40px;
+    background: $color-highlight-background;
+    border-radius: 6px;
+    .icon-search {
+        font-size: 24px;
+        color: $color-text-d;
+    }
+    .box {
+        flex: 1;
+        margin: 0 5px;
+        line-height: 18px;
+        background: $color-highlight-background;
+        color: $color-text-d;
+        font-size: 16px;
+        outline: none;
+        &::placeholder {
+            color: $color-text-d;
+        }
+    }
+}

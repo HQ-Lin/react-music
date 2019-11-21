@@ -1,0 +1,44 @@
+  @import "@assets/scss/variable";
+  .loading {
+      width: 100%;
+      text-align: center;
+      .desc {
+          line-height: 20px;
+          font-size: $font-size-small;
+          color: $color-text-l;
+      }
+  }
+
+  .ball-clip-rotate>div {
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      margin: 2px;
+      animation-fill-mode: both;
+      border-width: 2px;
+      border-style: solid;
+      border-color: #fff;
+      border-bottom-color: transparent;
+      height: 26px;
+      width: 26px;
+      display: inline-block;
+      animation: rotate .8s 0s linear infinite;
+  }
+
+  @keyframes rotate {
+      0% {
+          transform: rotate(0deg) scale(1);
+          border-color: #f60;
+          border-bottom-color: transparent;
+      }
+      50% {
+          transform: rotate(180deg) scale(.7);
+          border-color: #f10;
+          border-bottom-color: transparent;
+      }
+      100% {
+          transform: rotate(360deg) scale(1);
+          border-color: #f90;
+          border-bottom-color: transparent;
+      }
+  }

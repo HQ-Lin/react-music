@@ -1,0 +1,9 @@
+@import "@assets/scss/variable";
+
+.top-tip {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+    background: $color-dialog-background;
+}
